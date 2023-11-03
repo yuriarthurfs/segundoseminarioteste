@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tela de Login</title>
+</head>
+<body>
+  <div class="login-container">
+    <label for="username">Login:</label>
+    <input type="text" id="usuario" name="usuario">
+
+    <label for="password">Senha:</label>
+    <input type="password" id="senha" name="senha">
+
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div class="popup" id="loginErrorPopup">
+    <p>Informe o Login</p>
+    <button onclick="closePopup('loginErrorPopup')">Ok</button>
+  </div>
+
+  <div class="popup" id="passwordErrorPopup">
+    <p>Informe a Senha</p>
+    <button onclick="closePopup('passwordErrorPopup')">Ok</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
